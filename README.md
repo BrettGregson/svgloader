@@ -75,5 +75,5 @@ Properties such as stroke thickness, color and linejoin need to be configured pe
 sveegee.stopSVG(500);
 ```
 
-Stops the SVG sequence and fades out in speficied milliseconds (Default is 500 if not provided)
+Stops the SVG sequence and fades out in specified milliseconds (Default is 500 if not provided)
 
