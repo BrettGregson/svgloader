@@ -8,15 +8,23 @@
     <script src="vivus.min.js"></script>
     <script src="sveegee.js"></script>
     
+    <style>
+		#loader			{position:absolute; width: 60px; height: 60px;  top: 50%; left: 50%; margin-left: -30px; margin-top: -30px; text-align:center; display: none;}
+		#loader svg		{stroke: #3b8eff;}
+	</style>
+    
 </head>
 
 <body>
 
-<div id="loader" style="width:80px; height: 80px;"></div>
+
+<button class="showLoader">Show Loader</button>
+<button class="hideLoader">Hide Loader</button>
 
 <script>
 	$(function(){
 		// create an array of resources that we are going to use
+		var loader;
 		var resources = [
 			"resources/0.svg",
 			"resources/1.svg",
@@ -40,7 +48,15 @@
 		}
 		
 		// assign to element
-		$("#loader").sveegee(params);
+		$('.showLoader').click(function(){
+			$('body').append("<div id='loader'></div>");
+			loader = $("#loader").sveegee(params);
+			$("#loader").fadeIn();
+		});
+		
+		$('.hideLoader').click(function(){	
+			loader.stopSVG(500);
+		});
 	});
 </script>
 
