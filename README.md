@@ -27,7 +27,7 @@ http://brettgregson.com/dev/svg/
 var resources = [
 	"resources/0.svg",
 	"resources/1.svg",
-	"resources/2.svg?i",
+	"resources/2.svg",
 	"resources/3.svg",
 	"resources/4.svg",
 	"resources/5.svg",
