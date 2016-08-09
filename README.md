@@ -8,6 +8,8 @@ Animated SVG sequence for loaders. Draws and animates between multiple SVG files
 **Demo:**
 http://brettgregson.com/dev/svg/
 
+---
+
 **Usage:**
 
 ```html
@@ -48,6 +50,7 @@ var params = {
 var sveegee = $("#loader").sveegee(params);
 ```
 
+
 | Property        | Description | Default |
 | ------------- |:-------------:|:-------------:|
 | resources      | Array of SVG paths |[]|
@@ -56,12 +59,15 @@ var sveegee = $("#loader").sveegee(params);
 | fadeTime      | Time in MS of fadeOut effect |250|
 | shuffleArray      | Bool, should array be shuffled or not |false|
 
+---
+
 **SVG Properties:**
 
 Properties such as stroke thickness, color and linejoin need to be configured per SVG on the SVG file itself, for example:
 ```html
 <svg  stroke="black" stroke-width="5" stroke-linejoin="round"
 ```
+---
 
 **Methods:**
 
