@@ -1,5 +1,7 @@
 ## Animated SVG Sequence
 
+Animated SVG sequence for loaders. Draws and animates between multiple SVG files to create a sequence of loading image. Built on top of [vivus.js](https://github.com/maxwellito/vivus) and jQuery. 
+
 **Demo:**
 http://brettgregson.com/dev/svg/
 
