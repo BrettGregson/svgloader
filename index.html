@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Loader</title>
+    
+    <script src="jquery.min.js"></script>
+    <script src="vivus.min.js"></script>
+    <script src="sveegee.js"></script>
+    
+</head>
+
+<body>
+
+<div id="loader" style="width:80px; height: 80px;"></div>
+
+<script>
+	$(function(){
+		// create an array of resources that we are going to use
+		var resources = [
+			"resources/0.svg",
+			"resources/1.svg",
+			"resources/2.svg?i",
+			"resources/3.svg",
+			"resources/4.svg",
+			"resources/5.svg",
+			"resources/6.svg",			
+			"resources/7.svg",
+			"resources/8.svg",
+			"resources/9.svg",
+		];
+		
+		// configure the plugin
+		var params = {
+			resources		: resources,
+			speed			: 50,
+			displayTime		: 500,
+			fadeTime		: 250,
+			shuffleArray	: true,
+		}
+		
+		// assign to element
+		$("#loader").sveegee(params);
+	});
+</script>
+
+</body>
+</html>
